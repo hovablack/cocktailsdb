@@ -1,6 +1,6 @@
-require "cocktailsdb/version"
+require_relative "./cocktailsdb/version"
 
-module Cocktailsdb
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./cocktailsdb/api"
+require_relative "./cocktailsdb/cli"
+require_relative "./cocktailsdb/cocktails"
+
